@@ -1,5 +1,5 @@
-##############create dataproc cluster####################
-gcloud dataproc clusters create cluster-name \
+**create dataproc cluster**
+> gcloud dataproc clusters create cluster-name \
     --region=region
 
 ############# create cluster with knox gate way###############
@@ -8,7 +8,7 @@ gcloud dataproc clusters create cluster-name \
     --region=region \
     other args ...
 
-############# optional components#######################
+############# optional components#################### ###
 gcloud dataproc clusters create cluster-name \
   --optional-components=COMPONENT-NAME(s) \
   ... other flags
@@ -76,3 +76,7 @@ gcloud dataproc clusters create nssl-data-proc \
     --region=region \
     --service-account=service-account-name@project-id.iam.gserviceaccount.com \
     --scopes=scope[, ...]    
+
+reference URL
+    https://cloud.google.com/architecture/hadoop/connecting-visualization-software-to-hadoop-on-google-cloud
+    https://github.com/GoogleCloudPlatform/dataproc-connect-visualization/tree/master/terraform
